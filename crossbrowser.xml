@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+  <test  name="Test_CHROME">
+  <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="tasks.Using_Ajio"/>
+      <class name="tasks.Using_Swiggy"/>
+      <class name="tasks.Using_Flipkart"/>
+      <class name="tasks.Using_Amazon"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Test_EDGE">
+  <parameter name="browser" value="Edge"></parameter>
+    <classes>
+      <class name="tasks.Using_Ajio"/>
+      <class name="tasks.Using_Swiggy"/>
+      <class name="tasks.Using_Flipkart"/>
+      <class name="tasks.Using_Amazon"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
